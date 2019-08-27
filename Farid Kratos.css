@@ -1,0 +1,160 @@
+.img1 {
+  border-radius: 50%;
+}
+p1 {
+  font-size: 72px;
+  background: -webkit-linear-gradient(green,blue,red,yellow,orange,purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+html
+{
+    background-color: black;
+
+    animation: 7s infinite alternate ease-out breathing-color--dark;
+}
+
+@keyframes breathing-color--dark {
+    from
+    {
+        background-color: black;
+    }
+    to
+    {
+        background-color: grey;
+    }
+}
+#rectangle{
+    width:relative;
+    height:relative;
+    background:#973D3D;
+}
+.container {
+  position:relative;
+  width: 100%;
+}
+
+.image {
+  display:block;
+  width: auto;
+  height: 350;
+}
+
+.overlay {
+  position:absolute;
+  bottom:100%;
+  left:0;
+  right:0;
+  background-color: #008CBA;
+  overflow:hidden;
+  width:100%;
+  height:0;
+  transition: .5s ease;
+}
+
+
+.container:hover .overlay {
+  bottom:0;
+  height:100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+id2{
+    float:right;
+}
+id3{
+    float:left;
+}
+id4{
+    float:right;
+}
+
+.column {
+  float: left;
+  width: 48.9%;
+  height: auto;
+  padding: 5px;
+
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+    
+  clear:both;
+  display: table;
+}
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color:green;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
